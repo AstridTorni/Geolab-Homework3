@@ -31,6 +31,10 @@
 .nav-li a, .logo a{
 	color: black;
 }
+.burger{
+	display: none;
+}
+
 /* section 1*/
 .section1{
 	margin-top: 60px;
@@ -61,7 +65,7 @@
 
 /* section 2*/
 .container2{
- width: 1000px;
+ width: 90%;
  margin: 0 auto;
  margin-top: 50px;
  margin-bottom: 60px;
@@ -70,8 +74,9 @@
 	display: flex;
 }
 .left{
-	width: 240px;
+	width: 25%;
 	margin-left: 13px;
+	margin-right: 6%;
 }
 .left h2{
 	font-size: 13px;
@@ -85,14 +90,14 @@
 }
 
 .right{
-	width: 850px;
+	width: 60%;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
 	align-items: center;
 }
 .block{
-	width: 250px;
+	width: 30%;
 }
 .block img{
 	width: 100%;
@@ -110,5 +115,55 @@
 .block:nth-child(2),
 .block:nth-child(3){
 	margin-bottom: 30px;
+
+}
+
+
+/* Responsive */
+
+@media (max-width: 750px) {
+	.container h2{
+		font-size: 65px;
+
+	}
+    .nav{
+    	display: none;
+    }
+   .burger{
+   	font-size: 25px;
+    color: black;
+    display: block;
+    margin-right: 20px;
+   }
+    .container2{
+    	width: 95%
+    }
+   	.block{
+	width: 45%;
+}
+}
+
+@media (max-width: 500px){
+	.block-wraper2{
+		flex-direction: column;
+
+	}
+	.left{
+    	width: 95%
+    }
+    .block{
+	     width: 100%;
+    }
+    .right{
+	    width: 90%;
+	    margin-left: 13px;
+	    margin-right: 15px;
+	    margin-top: 30px;
+	    display: flex;
+	    flex-direction: column;
+	    justify-content: space-around;
+	    align-items: center;
+
+    }
 
 }
